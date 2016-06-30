@@ -29,7 +29,7 @@ on-screen display, or as CSV, for manipulation elsewhere.
 
 As BuddyPress powers communities large and small, certain types of site require
 member profile data to be viewed across multiple users, rather than one member
-at a time. In other words, wide and thin, instead of narrow deep.
+at a time. In other words, wide and thin, instead of narrow and deep.
 
 ## How?
 
