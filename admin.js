@@ -32,7 +32,12 @@ var exportHumans = {
 		}
 
 		if ( ! e.target.getAttribute( 'previous-value' ) ) {
-			exportHumans.addRow( e );
+			var lastRow = document.querySelector( '#export-humans-table tbody tr:last-child select' );
+
+			// If the last selectbox is empty, don't add another row.
+			if ( lastRow.options[ lastRow.selectedIndex ].value ) {
+				exportHumans.addRow( e );
+			}
 		}
 
 		e.target.setAttribute( 'previous-value', 1 );
