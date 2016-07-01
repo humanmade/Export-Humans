@@ -85,7 +85,7 @@ function reports_screen() {
 			<button class="page-title-action"><?php _e( 'Add Field', 'export-humans' ); ?></button>
 		</h1>
 
-		<table class="wp-list-table widefat fixed striped export-humans">
+		<table class="wp-list-table widefat fixed striped export-humans" id="export-humans-table">
 			<thead>
 				<tr>
 					<td class="manage-column column-action action-column"></th>
@@ -100,7 +100,7 @@ function reports_screen() {
 							<span class="screen-reader-text"><?php _e( 'Delete', 'export-humans' ); ?></span>
 						</span>
 					</th>
-					<td><select><?php echo $select_html; ?></select></td>
+					<td class="select-column"><select><?php echo $select_html; ?></select></td>
 				</tr>
 			</tbody>
 		</table>
@@ -115,7 +115,7 @@ function reports_screen() {
 					<span class="screen-reader-text"><?php _e( 'Delete', 'export-humans' ); ?></span>
 				</span>
 			</th>
-			<td><select><?php echo $select_html; ?></select></td>
+			<td class="select-column"><select><?php echo $select_html; ?></select></td>
 		</tr>
 	</script>
 

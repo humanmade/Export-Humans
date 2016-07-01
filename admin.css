@@ -46,3 +46,10 @@ tbody tr:nth-of-type(1) .eh-delete-icon {
 #eh-submit {
 	margin-top: 26px;
 }
+
+@media screen and (max-width: 782px) {
+	body #export-humans-table thead .action-column {
+		display: table-cell !important;
+		width: 30px !important;
+	}
+}
