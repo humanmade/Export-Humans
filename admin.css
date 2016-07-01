@@ -1,0 +1,48 @@
+body .wrap h1 {
+	margin-bottom: 26px;
+}
+
+body .widefat td {
+	vertical-align: inherit;
+}
+
+.page-title-action {
+	color: #0073AA;
+}
+
+.fixed .column-member {
+	width: 15%;
+}
+
+.action-column:not(.disabled):hover,
+.page-title-action:hover {
+	cursor: pointer;
+}
+
+.action-column {
+	width: 2.2em;
+}
+
+.eh-delete-icon:before {
+	content: "\f182";
+	font: 400 20px/.5 dashicons;
+	speak: none;
+	display: inline-block;
+	padding: 0;
+	top: 5px;
+	left: 8px;
+	position: relative;
+	vertical-align: top;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-decoration: none !important;
+	color: #444;
+}
+
+tbody tr:nth-of-type(1) .eh-delete-icon {
+	display: none;
+}
+
+#eh-submit {
+	margin-top: 26px;
+}
