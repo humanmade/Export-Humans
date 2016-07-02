@@ -50,6 +50,8 @@ function add_admin_menu() {
 
 /**
  * Handle form submission/report generation.
+ *
+ * @since 1.0
  */
 function maybe_generate_report() {
 	if ( ! bp_current_user_can( 'bp_moderate' ) ) {
@@ -68,6 +70,8 @@ function maybe_generate_report() {
 
 /**
  * Draw the reports screen.
+ *
+ * @since 1.0
  */
 function reports_screen() {
 	$form_url     = remove_query_arg( array( 'action' ), $_SERVER['REQUEST_URI'] );
@@ -154,7 +158,11 @@ function reports_screen() {
 
 /**
  * Generate a report.
- * 
+ *
+ * Outputs to the browser as a file requesting download.
+ *
+ * @since 1.0
+ *
  * @param array $profile_field_ids Array of integers.
  */
 function generate_report( $profile_field_ids ) {
