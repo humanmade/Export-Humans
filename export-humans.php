@@ -112,8 +112,8 @@ function reports_screen() {
 
 	<div class="wrap">
 		<h1>
-			<?php _ex( 'Member Profile Data Reports', 'wp-admin screen title', 'export-humans' ); ?>
-			<button class="page-title-action"><?php _e( 'Add Field', 'export-humans' ); ?></button>
+			<?php echo esc_html( _x( 'Member Profile Data Reports', 'wp-admin screen title', 'export-humans' ) ); ?>
+			<button class="page-title-action"><?php esc_html_e( 'Add Field', 'export-humans' ); ?></button>
 		</h1>
 
 		<form action="<?php echo esc_url( $form_url ); ?>" method="post" target="_blank">
@@ -121,7 +121,7 @@ function reports_screen() {
 				<thead>
 					<tr>
 						<td class="manage-column column-action action-column"></th>
-						<th scope="col" class="column-primary column-field"><?php _e( 'Profile Field', 'export-humans' ); ?></th>
+						<th scope="col" class="column-primary column-field"><?php esc_html_e( 'Profile Field', 'export-humans' ); ?></th>
 					</tr>
 				</thead>
 
@@ -129,7 +129,7 @@ function reports_screen() {
 					<tr>
 						<th scope="row" class="action-column disabled">
 							<span class="eh-delete-icon" title="<?php esc_attr_e( 'Delete', 'export-humans' ); ?>">
-								<span class="screen-reader-text"><?php _e( 'Delete', 'export-humans' ); ?></span>
+								<span class="screen-reader-text"><?php esc_html_e( 'Delete', 'export-humans' ); ?></span>
 							</span>
 						</th>
 						<td class="select-column"><select name="ids[]"><?php echo $select_html; ?></select></td>
@@ -146,7 +146,7 @@ function reports_screen() {
 		<tr>
 			<th scope="row" class="action-column">
 				<span class="eh-delete-icon" title="<?php esc_attr_e( 'Delete', 'export-humans' ); ?>">
-					<span class="screen-reader-text"><?php _e( 'Delete', 'export-humans' ); ?></span>
+					<span class="screen-reader-text"><?php esc_html_e( 'Delete', 'export-humans' ); ?></span>
 				</span>
 			</th>
 			<td class="select-column"><select name="ids[]"><?php echo $select_html; ?></select></td>
