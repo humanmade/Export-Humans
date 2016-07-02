@@ -22,8 +22,7 @@ how to debug it, please hold off using it yet.
 
 ## What?
 
-Export Humans lets you export profile field data from BuddyPress, either for
-on-screen display, or as CSV, for manipulation elsewhere.
+Export Humans lets you export profile field data from BuddyPress, as CSV, for manipulation elsewhere.
 
 ## Why?
 
