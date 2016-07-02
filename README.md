@@ -33,14 +33,12 @@ at a time. In other words, wide and thin, instead of narrow and deep.
 
 ## How?
 
-Export Humans is pretty simple to use. ???.
+Export Humans is pretty simple to use. It adds a new "Profile Reports" menu item under "Users" inside the WordPress wp-admin area.
 
 ### WordPress Plugin
 
 Clone or submodule this repository into your `plugins` directory, and load it
 on your BuddyPress site.
-
-To start using it in your code, ???.
 
 ## Who?
 
