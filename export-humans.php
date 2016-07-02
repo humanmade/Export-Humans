@@ -36,7 +36,7 @@ function add_admin_menu() {
 		_x( 'Member Profile Data Reports', 'wp-admin screen title', 'export-humans' ),
 		_x( 'Profile Reports', 'wp-admin menu label', 'export-humans' ),
 		'manage_options',
-		'hmnmd-export-humans',
+		'export-humans',
 		__NAMESPACE__ . '\\reports_screen_handler'
 	);
 }
