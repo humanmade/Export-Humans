@@ -152,8 +152,9 @@ function reports_screen() {
  * @param array $profile_field_ids Array of integers.
  */
 function generate_report( $profile_field_ids ) {
-	$data  = array();
-	$users = get_users( array( 'fields' => array( 'display_name', 'ID' ) ) );
+	$data     = array();
+	$headings = array();
+	$users    = get_users( array( 'fields' => array( 'display_name', 'ID' ) ) );
 
 	foreach ( $users as $user ) {
 		if ( ! bp_is_user_active( $user->ID ) ) {
@@ -166,7 +167,8 @@ function generate_report( $profile_field_ids ) {
 			$field      = xprofile_get_field( $field_id );
 			$field_data = trim( xprofile_get_field_data( $field_id, $user->ID ) );
 
-			$data[ "{$user->display_name}" ][ "{$field->name}" ] = $field_data;
+			$headings[] = $field->name;
+			$data[ "{$user->display_name}" ][] = $field_data;
 		}
 	}
 
