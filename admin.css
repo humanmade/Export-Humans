@@ -52,4 +52,8 @@ tbody tr:nth-of-type(1) .eh-delete-icon {
 		display: table-cell !important;
 		width: 30px !important;
 	}
+
+	body #wpbody select {
+		width: 100%;
+	}
 }
